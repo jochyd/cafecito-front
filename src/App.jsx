@@ -1,12 +1,15 @@
 //agregar estos componentes 
+import './app.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Administrador from './components/views/Administrador';
-import Erro404 from './components/views/Erro404';
-import Inicio from './components/views/Inicio'
-
-import Menu from './components/common/Menu'
-import Footer from './components/common/Footer'
-
+import Error404 from './components/views/Error404';
+import Inicio from './components/views/Inicio';
+import Menu from './components/common/Menu';
+import Footer from './components/common/Footer';
+import DetalleProducto from './components/views/producto/DetalleProducto';
+import CrearProducto from './components/views/producto/CrearProducto';
+import EditarProductos from './components/views/producto/EditarProductos';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
@@ -19,9 +22,12 @@ function App() {
       {/*Este es el inicio  */}
       <Route exact path='/' element={<Inicio></Inicio>} ></Route>
       {/*Pagina administraador */}
-      <Route exact path='/administrador' element={<Administrador></Administrador>}></Route>
+      <Route exact path='/administrar' element={<Administrador></Administrador>}></Route>
       {/*Pagina error */}
-      <Route exact path='*' element={<Erro404></Erro404>}></Route>
+      <Route exact path='*' element={<Error404></Error404>}></Route>
+      <Route exact path='/administrar/detalle' element={<DetalleProducto></DetalleProducto>}></Route>
+      <Route exact path='/administrar/crear' element={<CrearProducto></CrearProducto>}></Route>
+      <Route exact path='/administrar/editar/:id' element={<EditarProductos></EditarProductos>}></Route>
     </Routes>
     <Footer></Footer>
     </BrowserRouter>

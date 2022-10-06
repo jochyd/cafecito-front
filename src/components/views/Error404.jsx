@@ -1,5 +1,5 @@
 import React from "react";
-const Erro404 = () => {
+const Error404 = () => {
     return (
         <div>
            <h1>Error 404</h1> 
@@ -7,4 +7,4 @@ const Erro404 = () => {
     );
 };
 
-export default Erro404;
+export default Error404;
