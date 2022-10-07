@@ -3,7 +3,7 @@ import { Container, Form, Button } from "react-bootstrap";
 const CrearProducto = () => {
   return (
     <>
-      <Container>
+      <Container className="mainSection">
         <h1 className="display-5 mt-5 fw-lighter">Nuevo Producto</h1>
         <hr></hr>
         <section>

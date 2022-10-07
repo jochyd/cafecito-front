@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Container } from 'react-bootstrap';
 const DetalleProducto = () => {
     return (
-        <div>
+        <div className="mainSection">
             <Container className='my-4'>
              <Card className='d-flex flex-row flex-nowrap overflow-auto'>
       <Card.Img variant="bottom" src="holder.js/100px180" />

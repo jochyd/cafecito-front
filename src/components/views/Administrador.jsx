@@ -25,7 +25,7 @@ const Administrador = () => {
         </article>
         <hr></hr>
         <section className="d-grid">
-          <Table striped bordered hover>
+          <Table striped responsive bordered hover>
             <thead>
               <tr className="text-center">
                 <th>Cod</th>
