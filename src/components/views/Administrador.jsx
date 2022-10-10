@@ -2,8 +2,15 @@ import React from "react";
 import { Container, Stack, Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import ItemTabla from "./producto/ItemTabla";
+import { useEffect } from "react";
+import { consultarAPI } from "../helpers/queries";
+
 
 const Administrador = () => {
+  useEffect(()=>{
+    consultarAPI();
+  },[])
+
   return (
     <>
       <Container className="mainSection">
