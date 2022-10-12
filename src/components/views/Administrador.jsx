@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Stack, Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import ItemTabla from "./producto/ItemTabla";
@@ -7,8 +7,14 @@ import { consultarAPI } from "../helpers/queries";
 
 
 const Administrador = () => {
+  const [productos, setProductos] = useState([]);
+
+
   useEffect(()=>{
-    consultarAPI();
+  consultarAPI().then((respuesta)=>{
+   setProductos(respuesta);
+  });
+
   },[])
 
   return (
@@ -44,7 +50,9 @@ const Administrador = () => {
               </tr>
             </thead>
             <tbody>
-              <ItemTabla></ItemTabla>
+              {
+                productos.map((producto)=><ItemTabla key={producto.id} producto={producto}></ItemTabla>)
+              }
             </tbody>
           </Table>
         </section>

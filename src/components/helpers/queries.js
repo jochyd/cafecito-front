@@ -5,8 +5,10 @@ export const consultarAPI = async () =>{
     try{
         console.log(URL);
         const respuesta = await fetch(URL)
-        console.log(respuesta);
+        const listaProductos = await respuesta.json();
+        return listaProductos;
     }catch(error){
         console.log(error)
+        return false;
     }
 }
