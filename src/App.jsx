@@ -9,6 +9,8 @@ import Footer from './components/common/Footer';
 import DetalleProducto from './components/views/producto/DetalleProducto';
 import CrearProducto from './components/views/producto/CrearProducto';
 import EditarProductos from './components/views/producto/EditarProductos';
+import Login from './components/views/producto/Login';
+import Registrar from './components/views/producto/Registrar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
       <Route exact path='/administrar/detalle' element={<DetalleProducto></DetalleProducto>}></Route>
       <Route exact path='/administrar/crear' element={<CrearProducto></CrearProducto>}></Route>
       <Route exact path='/administrar/editar/:id' element={<EditarProductos></EditarProductos>}></Route>
+      <Route exact path='/login' element={<Login></Login>}></Route>
+      <Route exact path='/registrar' element={<Registrar></Registrar>}></Route>
     </Routes>
     <Footer></Footer>
     </BrowserRouter>

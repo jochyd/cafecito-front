@@ -1,26 +1,39 @@
 {
-    "productos":[
-        {
-            "nombreProducto":"cafe",
-            "precio": 300,
-            "categoria":"Bebida Caliente",
-            "imagen":"https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "id": 1
-        },
-        {
-            "nombreProducto":"brownie",
-            "precio": 250,
-            "categoria":"Dulce",
-            "imagen":"https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "id": 2
-        },
-        {
-            "nombreProducto":"te",
-            "precio": 100,
-            "categoria":"Bebida Caliente",
-            "imagen":"https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "id": 3
-        }
-        
-    ]
+  "productos": [
+    {
+      "nombreProducto": "cafe",
+      "precio": 300,
+      "categoria": "Bebida Caliente",
+      "imagen": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "id": 1
+    },
+    {
+      "nombreProducto": "brownie",
+      "precio": 250,
+      "categoria": "Dulce",
+      "imagen": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "id": 2
+    },
+    {
+      "nombreProducto": "te",
+      "precio": 100,
+      "categoria": "Bebida Caliente",
+      "imagen": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "id": 3
+    },
+    {
+      "nombreProducto": "cafe",
+      "precio": 300,
+      "categoria": "Bebida Caliente",
+      "imagen": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "id": 4
+    },
+    {
+      "nombreProducto": "brownie 2",
+      "precio": 300,
+      "categoria": "Bebida Caliente",
+      "imagen": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "id": 5
+    }
+  ]
 }

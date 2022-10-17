@@ -11,7 +11,8 @@ const CrearProducto = () => {
   //esta funcion se ejecuta despues del evento del handleSubmit del form linea 18(esta es mi funcion)
   const onSubmit = (data) => {
     console.log(data);
-    //aqui hacer la peticion de la api
+    //aqui enviar la peticion de la api
+
   };
 
   return (

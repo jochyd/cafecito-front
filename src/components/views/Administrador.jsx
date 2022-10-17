@@ -14,8 +14,8 @@ const Administrador = () => {
   consultarAPI().then((respuesta)=>{
    setProductos(respuesta);
   });
-
   },[])
+
 
   return (
     <>

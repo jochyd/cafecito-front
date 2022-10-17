@@ -1,8 +1,11 @@
 import { Navbar,Container, Nav } from "react-bootstrap";
 //importo el link para poner las rutas en vez de href de los navbar.brand
 import { Link, NavLink } from "react-router-dom";
+import Login from "../views/producto/Login";
+import Registrar from "../views/producto/Registrar";
 
 const Menu = () => {
+
     return (
         <Navbar bg="danger" variant="dark" expand="lg">
         <Container>
@@ -12,6 +15,8 @@ const Menu = () => {
             <Nav className="me-auto">
               <NavLink to='/' className={'nav-item nav-link'} >Inicio</NavLink>
               <NavLink to='/administrar' className={'nav-item nav-link'} >Administrador</NavLink>
+          <Login></Login>
+          <Registrar></Registrar>
             </Nav>
           </Navbar.Collapse>
         </Container>
