@@ -105,7 +105,7 @@ const onSubmit = (data)=>{
               <hr></hr>
               <div className="text-center">
             <Button variant="danger" type="submit">
-              Ingresar
+           Ingresar
             </Button>
               </div>
           </Form>

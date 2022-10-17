@@ -1,5 +1,8 @@
 import { Container, Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
+import { crearProductoAPI } from "../../helpers/queries";
+import { useNavigate } from "react-router-dom";
 
 const CrearProducto = () => {
   //asi ponemos con el useForm del hook..si o si agregar estos son las etapas
@@ -7,12 +10,26 @@ const CrearProducto = () => {
     register,
     handleSubmit,
     formState: { errors },
+    reset
   } = useForm();
-  //esta funcion se ejecuta despues del evento del handleSubmit del form linea 18(esta es mi funcion)
+  //esta funcion se ejecuta despues del evento del handleSubmit del form 
+  //inicializamos el useNavigate
+  const navegacion = useNavigate();
+
   const onSubmit = (data) => {
     console.log(data);
     //aqui enviar la peticion de la api
-
+    crearProductoAPI(data).then((respuesta)=>{
+      if(respuesta.status === 201){
+        Swal.fire('Producto creado','El producto fue correctamente cargado','success');
+        //aqui reseteamos los values del formulario
+        reset();
+        //redirecciono a la ruta que necesitamos que redefina
+        navegacion('/administrar');
+      }else{
+        Swal.fire('Ocurrio un error','Intente esta operación en unos minutos','error');
+      }
+    })
   };
 
   return (

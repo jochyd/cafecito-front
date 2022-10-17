@@ -34,6 +34,34 @@
       "categoria": "Bebida Caliente",
       "imagen": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "id": 5
+    },
+    {
+      "nombreProducto": "hojaldre",
+      "precio": 150,
+      "categoria": "Dulce",
+      "imagen": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "id": 6
+    },
+    {
+      "nombreProducto": "Medialunas",
+      "precio": "50",
+      "imagen": "https://pics.com",
+      "categoria": "Dulce",
+      "id": 7
+    },
+    {
+      "nombreProducto": "Porcion hojaldre",
+      "precio": "350",
+      "imagen": "https://pics.com",
+      "categoria": "Dulce",
+      "id": 8
+    },
+    {
+      "nombreProducto": "Porcion de torta",
+      "precio": "450",
+      "imagen": "https://pics.com",
+      "categoria": "Dulce",
+      "id": 9
     }
   ]
 }
