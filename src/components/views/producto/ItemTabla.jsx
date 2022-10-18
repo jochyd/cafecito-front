@@ -29,7 +29,7 @@ const ItemTabla = ({producto, setProductos}) => {
           <td>{producto.imagen}</td>
           <td>{producto.categoria}</td>
           <td className="d-flex  justify-content-center">
-            <Link className="mx-3 btn btn-warning" to={`/administrar/editar/:id`} size='sm'>Editar</Link>
+            <Link className="mx-3 btn btn-warning" to={`/administrar/editar/${producto.id}`} size='sm'>Editar</Link>
           <Button variant='danger'type='button'size='sm' onClick={borrarProducto}>Borrar</Button></td>
         </tr>  
         </>

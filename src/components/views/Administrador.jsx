@@ -9,13 +9,11 @@ import { consultarAPI } from "../helpers/queries";
 const Administrador = () => {
   const [productos, setProductos] = useState([]);
 
-
   useEffect(()=>{
   consultarAPI().then((respuesta)=>{
    setProductos(respuesta);
   });
   },[])
-
 
   return (
     <>

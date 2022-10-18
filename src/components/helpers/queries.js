@@ -9,12 +9,11 @@ const URL = process.env.REACT_APP_API_CAFECITO;
 export const consultarAPI = async () =>{
     try{
         //esto es una peticion get
-        console.log(URL);
+        
         const respuesta = await fetch(URL)
         const listaProductos = await respuesta.json();
         return listaProductos;
     }catch(error){
-        console.log(error)
         return false;
     }
 }
@@ -31,7 +30,6 @@ export const crearProductoAPI = async (producto) =>{
         });
         return respuesta;
     }catch(error){
-        console.log(error)
         return false;
     }
 }
@@ -44,7 +42,20 @@ export const borrarProductoAPI = async (id) =>{
         });
         return respuesta;
     }catch(error){
-        console.log(error)
+        return false;
+    }
+}
+
+export const obtenerProdcutoAPI = async (id) =>{
+    try{
+        //esto es una peticion get
+        const respuesta = await fetch(URL+'/'+id);
+        const producto = {
+            dato: await respuesta.json(),
+            status: respuesta.status
+        }
+    return producto;
+    }catch(error){
         return false;
     }
 }
