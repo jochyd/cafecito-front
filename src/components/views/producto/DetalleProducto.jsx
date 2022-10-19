@@ -1,23 +1,47 @@
-import React from 'react';
-import { Card, Container } from 'react-bootstrap';
+import React from "react";
+import { Card, Container, Row, Col, Badge } from "react-bootstrap";
+import { obtenerProdcutoAPI } from "../../helpers/queries";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+
 const DetalleProducto = () => {
-    return (
-        <div className="mainSection">
-            <Container className='my-4'>
-             <Card className='d-flex flex-row flex-nowrap overflow-auto'>
-      <Card.Img variant="bottom" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <hr></hr>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-      </Card.Body>
-    </Card>
-            </Container>
-        </div>
-    );
+  const { id } = useParams();
+  const [producto, setProducto] = useState({});
+
+  useEffect(() => {
+    obtenerProdcutoAPI(id).then((respuesta) => {
+      if (respuesta.status === 200) {
+        setProducto(respuesta.dato);
+      }
+    });
+  }, []);
+
+  return (
+    <>
+      <div className="mainSection">
+        <Container className="my-4">
+          <Card className="w-100 h-50">
+            <Row>
+              <Col md={4}>
+            <Card.Img
+              src={producto.imagen}
+             
+            />
+              </Col>
+              <Col md={8}>
+            <Card.Body>
+              <Card.Title>{producto.nombreProducto}</Card.Title>
+              <hr></hr>
+              <Badge pill bg='primary'>{producto.categoria}</Badge>
+              <Card.Text className="mt-3">${producto.precio}</Card.Text>
+            </Card.Body>
+              </Col>
+            </Row>
+          </Card>
+        </Container>
+      </div>
+    </>
+  );
 };
 
 export default DetalleProducto;

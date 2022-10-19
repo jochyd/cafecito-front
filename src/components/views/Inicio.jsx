@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { consultarAPI } from "../helpers/queries";
 
 const Inicio = () => {
-  const [verProductos, setVerProductos] = useState([])
+  const [verProductos, setVerProductos] = useState([]);
   
   useEffect(()=>{
     consultarAPI().then((respuesta)=>{

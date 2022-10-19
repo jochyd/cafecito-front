@@ -1,26 +1,27 @@
 {
   "productos": [
     {
-      "nombreProducto": " cafe",
-      "precio": "50",
-      "imagen": "https://pics.com",
+      "nombreProducto": "Cafe",
+      "precio": "250",
+      "imagen": "https://media.istockphoto.com/photos/black-coffee-isolated-on-a-white-background-picture-id1286808993?k=20&m=1286808993&s=612x612&w=0&h=qk6vk_vuU_7zbHvImnVCFKJe2FDGTZXLM2Z4FAgl340=",
       "categoria": "Bebida Caliente",
+      "id": 1
+    }
+  ],
+  "usuarios": [
+    {
+      "nombre": "Josefina",
+      "apellido": "daoua",
+      "email": "jochydaoua@gmail.com",
+      "contrasenia": "Alachicalepusecuca",
       "id": 1
     },
     {
-      "nombreProducto": "mate",
-      "precio": "10",
-      "imagen": "https://pic.com",
-      "categoria": "Bebida Caliente",
+      "nombre": "facu",
+      "apellido": "montiel",
+      "email": "facumontiel@gmail.com",
+      "contrasenia": "asdfiauq2r5dsfv",
       "id": 2
-    },
-    {
-      "nombreProducto": "cafe",
-      "precio": "50",
-      "imagen": "https://media.istockphoto.com/photos/black-coffee-isolated-on-a-white-background-picture-id1286808993?s=612x612",
-      "categoria": "Bebida Caliente",
-      "id": 3
     }
-  ],
-  "usuarios": []
+  ]
 }

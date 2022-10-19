@@ -2,6 +2,7 @@ import { Button, Modal, Form } from "react-bootstrap";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useForm } from 'react-hook-form';
+import { crearUsuarioAPI } from "../../helpers/queries";
 
 const Login = () => {
   const [show, setShow] = useState(false);
@@ -13,10 +14,14 @@ const {
     register,
     handleSubmit,
     formState:{errors},
+    reset
 } = useForm();
 
 const onSubmit = (data)=>{
-    console.log(data);
+    crearUsuarioAPI(data).then((respuesta)=>{
+      reset();
+      handleClose();
+    });
 }
   return (
     <>
@@ -78,9 +83,9 @@ const onSubmit = (data)=>{
               {...register('email',{
                 required: 'El email es obligatorio}',
                 pattern:{
-                    value:/^(?=.[a-z])(?=.[A-Z])(?=.\d)(?=.[$@$!%?&])[A-Za-z\d$@$!%?&]{8,15}/,
-                    message:'La contraseña debe tener minimo 8, maximo 15, una mayuscula, un digito, no espacio, un caracter especial',
-                }
+                  value: /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i,
+                  message:'El email debe ser valido'
+              }
               })}
               />
               <Form.Text className="text-danger">
@@ -92,10 +97,11 @@ const onSubmit = (data)=>{
               <Form.Control type="password" placeholder="****" 
               {...register('contrasenia',{
                 required: 'El contraseña es obligatorio',
-                pattern:{
-                    value:/^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/,
-                    message:'El email debe ser valido'
-                }                
+                minLength:{
+                  value:6,
+                  
+                  message:'La contraseña debe tener minimo 8, maximo 15, una mayuscula, un digito, no espacio, un caracter especial',
+              }          
               })}
               />
             </Form.Group>
