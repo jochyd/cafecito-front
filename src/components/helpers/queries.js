@@ -75,3 +75,20 @@ export const obtenerProdcutoAPI = async (id) =>{
         return false;
     }
 }
+
+export const editarProductoAPI = async (id, producto) =>{
+    try{
+        //esto es una peticion get
+        const respuesta = await fetch(URL+'/'+id,{
+            method:"PUT",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify(producto) 
+        });
+    
+    return respuesta;
+    }catch(error){
+        return false;
+    }
+}
