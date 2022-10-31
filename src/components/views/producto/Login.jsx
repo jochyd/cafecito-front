@@ -6,10 +6,10 @@ import { useForm } from "react-hook-form";
 const Login = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow = () => setShow(true); 
+  const [usuarioLogeado, setUsurioLogeado] = useState([]);
 
-    
-
+  
   const {
     register,
     handleSubmit,
