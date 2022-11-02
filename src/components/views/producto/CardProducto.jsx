@@ -8,7 +8,7 @@ const CardProducto = ({producto}) => {
 
     return (
       <Col>
-        <Card style={{ width: '18rem' }}>
+        <Card style={{ width: '18rem' }} className='my-2'>
       <Card.Img variant="top" src={producto.imagen} />
       <Card.Body>
         <Card.Title>{producto.nombreProducto}</Card.Title>
@@ -18,7 +18,7 @@ const CardProducto = ({producto}) => {
         <Card.Text>
           {producto.precio}
         </Card.Text>
-        <Button variant="danger" as={Link} to={`administrar/detalle/${producto.id}`}>Ver más</Button>
+        <Button variant="danger" as={Link} to={`administrar/detalle/${producto._id}`}>Ver más</Button>
       </Card.Body>
     </Card>
       </Col>

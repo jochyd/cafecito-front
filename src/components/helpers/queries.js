@@ -2,7 +2,7 @@ const URL = process.env.REACT_APP_API_PRODUCTOS;
 const URLUsuarios = process.env.REACT_APP_API_USUARIOS;
 //peticion get para obtener todos los productos
 // GET: consultar y devuelve informacion 
-// POST: pide al servidor backend crear un nuevo producto, usuarios, etc, en los login tambien se pueden utilizar
+// POST: pide al serv_idor backend crear un nuevo producto, usuarios, etc, en los login tambien se pueden utilizar
 // PUT: sirve para modificar un producto, usuario u otro elemento.
 // DELETE: borrar producto, usuario u otro elemento.
 
@@ -50,10 +50,10 @@ export const crearUsuarioAPI = async (usuario) =>{
     }
 }
 
-export const borrarProductoAPI = async (id) =>{
+export const borrarProductoAPI = async (_id) =>{
     try{
         //esto es una peticion DELETE
-        const respuesta = await fetch(URL+'/'+id, {
+        const respuesta = await fetch(URL+'/'+_id, {
             method: 'DELETE',
         });
         return respuesta;
@@ -62,10 +62,10 @@ export const borrarProductoAPI = async (id) =>{
     }
 }
 
-export const obtenerProdcutoAPI = async (id) =>{
+export const obtenerProdcutoAPI = async (_id) =>{
     try{
         //esto es una peticion get
-        const respuesta = await fetch(URL+'/'+id);
+        const respuesta = await fetch(URL+'/'+_id);
         const producto = {
             dato: await respuesta.json(),
             status: respuesta.status
@@ -76,10 +76,10 @@ export const obtenerProdcutoAPI = async (id) =>{
     }
 }
 
-export const editarProductoAPI = async (id, producto) =>{
+export const editarProductoAPI = async ( id, producto) =>{
     try{
         //esto es una peticion get
-        const respuesta = await fetch(URL+'/'+id,{
+        const respuesta = await fetch(URL+'/'+ id,{
             method:"PUT",
             headers:{
                 "Content-Type":"application/json"
