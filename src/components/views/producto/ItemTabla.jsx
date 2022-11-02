@@ -26,7 +26,7 @@ const ItemTabla = ({ producto, setProductos }) => {
       })
       .then((result) => {
         if (result.isConfirmed) {
-          borrarProductoAPI(producto.id).then((respuesta) => {
+          borrarProductoAPI(producto._id).then((respuesta) => {
             if (respuesta.status === 200) {
               // luego de eliminar el producto, busco todos los productos existentes en este instante de tiempo.
               consultarAPI().then((respuesta) => {
@@ -54,7 +54,7 @@ const ItemTabla = ({ producto, setProductos }) => {
   return (
     <>
       <tr className="text-center">
-        <td>{producto.id}</td>
+        <td>{producto._id}</td>
         <td>{producto.nombreProducto}</td>
         <td>{producto.precio}</td>
         <td>{producto.imagen}</td>
@@ -62,7 +62,7 @@ const ItemTabla = ({ producto, setProductos }) => {
         <td className="d-flex  justify-content-center">
           <Link
             className="mx-3 btn btn-warning"
-            to={`/administrar/editar/${producto.id}`}
+            to={`/administrar/editar/${producto._id}`}
             size="sm"
           >
             Editar

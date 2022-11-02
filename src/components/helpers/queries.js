@@ -5,7 +5,7 @@ const URLUsuarios = process.env.REACT_APP_API_USUARIOS;
 // POST: pide al servidor backend crear un nuevo producto, usuarios, etc, en los login tambien se pueden utilizar
 // PUT: sirve para modificar un producto, usuario u otro elemento.
 // DELETE: borrar producto, usuario u otro elemento.
-console.log(URLUsuarios)
+
 
 export const consultarAPI = async () =>{
     try{

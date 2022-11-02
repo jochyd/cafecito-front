@@ -10,7 +10,6 @@ const Inicio = () => {
   useEffect(()=>{
     consultarAPI().then((respuesta)=>{
       setVerProductos(respuesta);
-      console.log(respuesta)
     });
     },[])
 

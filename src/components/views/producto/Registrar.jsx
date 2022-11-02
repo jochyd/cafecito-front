@@ -21,6 +21,7 @@ const onSubmit = (data)=>{
     crearUsuarioAPI(data).then((respuesta)=>{
       reset();
       handleClose();
+      console.log(respuesta);
     });
 }
   return (
@@ -28,7 +29,6 @@ const onSubmit = (data)=>{
       <NavLink className={"nav-item nav-link"} onClick={handleShow}>
         Registrarse
       </NavLink>
-
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Registrate</Modal.Title>

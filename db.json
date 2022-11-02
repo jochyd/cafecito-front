@@ -13,6 +13,13 @@
       "imagen": "https://media.istockphoto.com/photos/black-coffee-isolated-on-a-white-background-picture-id1286808993?k=20&m=1286808993&s=612x612&w=0&h=qk6vk_vuU_7zbHvImnVCFKJe2FDGTZXLM2Z4FAgl340=",
       "categoria": "Bebida Caliente",
       "id": 2
+    },
+    {
+      "nombreProducto": "te frio",
+      "precio": "324",
+      "imagen": "https://www.comedera.com/wp-content/uploads/2022/04/te-frio.jpg",
+      "categoria": "Bebida Fría",
+      "id": 3
     }
   ],
   "usuarios": [
@@ -36,6 +43,27 @@
       "email": "victoria@gmail.com",
       "contrasenia": "ljkwdfglmna45",
       "id": 3
+    },
+    {
+      "nombre": "eliseo",
+      "apellido": "espindola",
+      "email": "eliseoespindola@gmail.com",
+      "contrasenia": "47126djas",
+      "id": 4
+    },
+    {
+      "nombre": "el mas",
+      "apellido": "picante",
+      "email": "elmaspicante@gmail.com",
+      "contrasenia": "asdfasdñlf",
+      "id": 5
+    },
+    {
+      "nombre": "elkajsdhf",
+      "apellido": "lkasjdfl",
+      "email": "dlkjgfa@gasldg.cpm",
+      "contrasenia": "sdflkjasdñf",
+      "id": 6
     }
   ]
 }

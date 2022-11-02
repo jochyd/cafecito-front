@@ -17,7 +17,6 @@ const CrearProducto = () => {
   const navegacion = useNavigate();
 
   const onSubmit = (data) => {
-    console.log(data);
     //aqui enviar la peticion de la api
     crearProductoAPI(data).then((respuesta)=>{
       if(respuesta.status === 201){
@@ -29,6 +28,7 @@ const CrearProducto = () => {
       }else{
         Swal.fire('Ocurrio un error','Intente esta operación en unos minutos','error');
       }
+      console.log(respuesta);
     })
   };
 
