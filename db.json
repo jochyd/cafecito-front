@@ -64,6 +64,160 @@
       "email": "dlkjgfa@gasldg.cpm",
       "contrasenia": "sdflkjasdñf",
       "id": 6
+    },
+    {
+      "nombreProducto": "hojaldre",
+      "precio": 150,
+      "categoria": "Dulce",
+      "imagen": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "id": 7
+    },
+    {
+      "nombre": "elkajsdhf",
+      "apellido": "lkasjdfl",
+      "email": "dlkjgfa@gasldg.cpm",
+      "contrasenia": "sdflkjasdñf",
+      "id": 8
+    },
+    {
+      "nombre": "mamita",
+      "apellido": "lkasjdfl",
+      "email": "dlkjgfa@gasldg.cpm",
+      "contrasenia": "sdflkjasdñf",
+      "id": 9
+    },
+    {
+      "nombre": "a ella",
+      "apellido": "lkasjdfl",
+      "email": "dlkjgfa@gasldg.cpm",
+      "contrasenia": "sdflkjasdñf",
+      "id": 10
+    },
+    {
+      "nombre": "asdljkfañlsdfjh",
+      "apellido": "ljhasdfkjas",
+      "email": "asldkjf@gmial.com",
+      "contrasenia": "asldkfjasñdf",
+      "id": 11
+    },
+    {
+      "nombre": "elaisha",
+      "apellido": "guds",
+      "email": "atuhermana@gmail.com",
+      "contrasenia": "sdlkfgjñsldfg",
+      "id": 12
+    },
+    {
+      "nombre": "",
+      "apellido": "lkasjdfl",
+      "email": "dlkjgfa@gasldg.cpm",
+      "contrasenia": "sdflkjasdñf",
+      "id": 13
+    },
+    {
+      "nombre": "el facu",
+      "apellido": "picante",
+      "email": "facumontiel@gmail.com",
+      "contrasenia": "kasdfj",
+      "id": 14
+    },
+    {
+      "nombre": "el facu",
+      "apellido": "picante",
+      "email": "facumontiel@gmail.com",
+      "contrasenia": "kasdfja",
+      "id": 15
+    },
+    {
+      "nombre": "el facu",
+      "apellido": "picante",
+      "email": "facumontiel@gmail.com",
+      "contrasenia": "kasdfjaasdf",
+      "id": 16
+    },
+    {
+      "nombre": "el facu",
+      "apellido": "picante",
+      "email": "facumontiel@gmail.com",
+      "contrasenia": "kasdfjaasdf",
+      "id": 17
+    },
+    {
+      "nombre": "facu",
+      "apellido": "montiel",
+      "email": "facumontiel@gmail.com",
+      "contrasenia": "aslkdfjasñdf",
+      "id": 18
+    },
+    {
+      "nombre": "facu",
+      "apellido": "montiel",
+      "email": "facu@gmial.com",
+      "contrasenia": "asñdkfjasñldfkj",
+      "id": 19
+    },
+    {
+      "nombre": "fauc",
+      "apellido": "asdfkj",
+      "email": "asdflkja@agaslkdfj.com",
+      "contrasenia": "alskdjfasdfñkl",
+      "id": 20
+    },
+    {
+      "nombre": "eliseo",
+      "apellido": "espindola ",
+      "email": "asdflkja@gmail.com",
+      "contrasenia": "asdlkfjasdf",
+      "id": 21
+    },
+    {
+      "nombre": "eliseo",
+      "apellido": "espindola",
+      "email": "eliseo@gmail.com",
+      "contrasenia": "asldfkjasfdñlkasdf",
+      "id": 22
+    },
+    {
+      "nombre": "eliseo",
+      "apellido": "espindola",
+      "email": "aslkdfja@xn--gmasi-sta.com",
+      "contrasenia": "aslkdfjañsldkfj",
+      "id": 23
+    },
+    {
+      "nombre": "eliseo",
+      "apellido": "espindola",
+      "email": "aslkdfja@xn--gmasi-sta.com",
+      "contrasenia": "aslkdfjañsldkfj",
+      "id": 24
+    },
+    {
+      "nombre": "facu",
+      "apellido": "montiel",
+      "email": "facumontiel@gmail.com",
+      "contrasenia": "askdfjalsñkdfja",
+      "id": 25
+    },
+    {
+      "nombre": "facu",
+      "apellido": "montiel",
+      "email": "facumontiel@gmail.com",
+      "contrasenia": "askdfjalsñkdfja",
+      "id": 26
+    },
+    {
+      "nombre": "facu",
+      "apellido": "montiel",
+      "email": "facumontiel@gmail.com",
+      "contrasenia": "askdfjalsñkdfja",
+      "id": 27
+    },
+    {
+      "nombre": "josefina",
+      "apellido": "daoua",
+      "email": "jochydaoua@gmail.com",
+      "contrasenia": "12345678",
+      "id": 28
     }
   ]
 }

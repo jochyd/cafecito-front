@@ -49,11 +49,23 @@ export const crearUsuarioAPI = async (usuario) =>{
         return false;
     }
 }
+export const consultarUsuarioAPI = async () =>{
+    try{
+        //esto es una peticion get
+        
+        const respuesta = await fetch(URLUsuarios)
+        const listaUsuarios = await respuesta.json();
+        return listaUsuarios;
+    }catch(error){
+        return false;
+    }
+}
 
-export const borrarProductoAPI = async (_id) =>{
+
+export const borrarProductoAPI = async (id) =>{
     try{
         //esto es una peticion DELETE
-        const respuesta = await fetch(URL+'/'+_id, {
+        const respuesta = await fetch(URL+'/'+id, {
             method: 'DELETE',
         });
         return respuesta;
@@ -62,10 +74,10 @@ export const borrarProductoAPI = async (_id) =>{
     }
 }
 
-export const obtenerProdcutoAPI = async (_id) =>{
+export const obtenerProdcutoAPI = async (id) =>{
     try{
         //esto es una peticion get
-        const respuesta = await fetch(URL+'/'+_id);
+        const respuesta = await fetch(URL+'/'+id);
         const producto = {
             dato: await respuesta.json(),
             status: respuesta.status

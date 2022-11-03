@@ -26,7 +26,7 @@ const ItemTabla = ({ producto, setProductos }) => {
       })
       .then((result) => {
         if (result.isConfirmed) {
-          borrarProductoAPI(producto.id).then((respuesta) => {
+          borrarProductoAPI(producto._id).then((respuesta) => {
             if (respuesta.status === 200) {
               // luego de eliminar el producto, busco todos los productos existentes en este instante de tiempo.
               consultarAPI().then((respuesta) => {

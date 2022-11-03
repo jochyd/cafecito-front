@@ -2,22 +2,42 @@ import { Button, Modal, Form } from "react-bootstrap";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import { consultarUsuarioAPI } from "../../helpers/queries";
+import Swal from "sweetalert2";
 
-const Login = () => {
+
+const Login = ({setUsuarioLogueado}) => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true); 
   
-
-  
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
   const onSubmit = (data) => {
     console.log(data);
+    consultarUsuarioAPI().then((usuarios) => {
+      const usuarioIngresado = usuarios.find((usuario)=> usuario.email === data.email);
+      console.log(usuarioIngresado)
+      if(usuarioIngresado){
+        if(data.password === usuarioIngresado.password){
+          localStorage.setItem('usuarioLogueado',JSON.stringify(usuarioIngresado))
+          setUsuarioLogueado(usuarioIngresado);
+          reset();
+          handleClose();
+        }
+      }else{
+        Swal.fire(
+          'El usuario ingresado no es correcto',
+          'No se pudo cargar el usuario',
+          'warning'
+        )
+      }
+    })
   };
   return (
     <>
